@@ -1,0 +1,4 @@
+use TwilioProgetto;
+select users_field_data.name, contactlist_entry_field_data.name, contactlist_entry_field_data.telephone
+from contactlist_entry_field_data
+inner join users_field_data on (contactlist_entry_field_data.owner = users_field_data.uid)
